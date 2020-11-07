@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-Javascrip</title>
+</head>
+<body>
+    <script>
+        var array;
+        var text=prompt("Enter numbers");
+        function sort(text)
+        {
+            var temp;
+            for(i=0;i<array.length;i++)
+            {
+                for(j=i+1;j<array.length;j++)
+                {
+                    if(j>i)
+                    {
+                        temp=array[i];
+                        array[i]=array[j];
+                        array[j]=temp;
+                        
+                    }
+                }
+            }
+
+            for(i=0;i<array.length;i++){
+                document.write("sorted array is "+ array[i]);
+            }
+            
+        }
+        sort(text);
+    </script>
+</body>
+</html>
