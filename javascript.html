@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1 id="hello"></h1>
+    <!--<script type="text/Javascript">
+    document.getElementById('hello').innerHTML='hello world';
+    </script>-->
+
+    <!--<script type="text/Javascript">
+        alert('my name is dilshani');
+    </script>-->
+
+    <!--<button onclick="Myfunction()">click me</button>
+    <p id="demo"></p>
+    <script>
+        function Myfunction()
+        {
+            var text;
+            var person =prompt("click OK to confirm submission ");
+             if(person==null || person=="")
+             text="User has cancel the prompt";
+             else
+             text="hello"+person ;
+
+             document.getElementById('demo').innerHTML=text;
+        }
+    </script>-->
+<script>
+var count=0;
+function checkvovel(name)
+{
+    for(i=0;i<name.length;i++)
+{
+    if(name[i]=='a' || name[i]=='e'||name[i]=='i'|| name[i]=='o'|| name[i]=='u')
+    {
+        count++;
+    }
+}
+document.write(name + "has " +count +" vowels");
+}
+
+
+
+var myname=prompt("Enter your name");
+checkvovel(myname);
+</script>
+    
+
+</body>
+</html>
